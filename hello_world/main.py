@@ -12,8 +12,11 @@ def login_view():
 
         if username == 'kitsios' and passwd == 'pass':
             msg = "Username and password are correct"
+            return render_template("index.html", message=msg)
         else:
             msg = "Username or password are incorrect"
+            return render_template("wrong.html", message=msg)
+        print(msg)    
     return render_template("form.html", message=msg)
 
 
