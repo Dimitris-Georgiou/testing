@@ -10,7 +10,7 @@ def login_view():
         username = request.form["username"]
         passwd = request.form["passwd"]
 
-        if username == 'me' and passwd == 'pass':
+        if username == 'kitsios' and passwd == 'pass':
             msg = "Username and password are correct"
         else:
             msg = "Username or password are incorrect"
